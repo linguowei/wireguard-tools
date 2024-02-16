@@ -13,9 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: pwd
+      run: pwd
     - name: cd
       run: cd src/
     - name: pwd
       run: pwd
+    - name: cd
+      run: cd src/
     - name: make
       run: make install WITH_WGQUICK=yes PREFIX=/usr/local/
