@@ -16,4 +16,4 @@ jobs:
     - name: cd
       run: cd src/
     - name: make
-      run: make
+      run: make install WITH_WGQUICK=yes PREFIX=/usr/local/
